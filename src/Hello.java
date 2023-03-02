@@ -7,6 +7,7 @@ public class Hello {
 		
 		g.greet();
 		
+		Frame frame = new Frame();
 	}
 
 }
