@@ -19,8 +19,13 @@ public class Frame extends JFrame{
 	public Frame() {
 
 
-		frame = new JFrame();
+		label = new JLabel();
+		label.setText("This is Dr.Higgs");
+		label.setHorizontalAlignment(JLabel.CENTER);
+		
+		
 
+		frame = new JFrame();
 
 
 		frame.setSize(500, 500);
@@ -28,10 +33,6 @@ public class Frame extends JFrame{
 		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		frame.setTitle("Dr.Higgs Frame");
 
-		label = new JLabel();
-		label.setText("This is Dr.Higgs");
-		label.setIcon(image);
-		label.setHorizontalTextPosition(JLabel.CENTER);
 		
 		frame.add(label);
 
