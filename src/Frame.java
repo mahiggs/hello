@@ -16,7 +16,6 @@ public class Frame extends JFrame{
 	protected static final int X_Location = 500;
 	protected static final int Y_Location = 150;
 	protected JLabel label;
-	protected ImageIcon image;
 
 	
 	
@@ -27,24 +26,17 @@ public class Frame extends JFrame{
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setTitle("Dr.Higgs Frame");
 		
-		image = new ImageIcon("mhiggs.png");
+		
 		
 		label = new JLabel();
-		
-		
 
-		label.setText("This is Dr.Higgs");
-		label.setIcon(image);
-		System.out.println("Hi");
+		label.setText("Hello");
 		label.setHorizontalAlignment(JLabel.CENTER);
 		
 		this.add(label);
 
 
 		this.getContentPane().setBackground(Color.YELLOW);
-	
-
-	
 	
 		
 		this.setVisible(true);
